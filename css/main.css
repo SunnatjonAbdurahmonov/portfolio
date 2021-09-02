@@ -102,6 +102,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
   transition: all 0.2s linear;
 }
 .header .brand img {
@@ -132,6 +133,7 @@ section {
   flex-direction: column;
   justify-content: center;
   padding-top: 170px;
+  padding-bottom: 70px;
 }
 .main .main-title {
   font-size: 4em;
@@ -189,7 +191,7 @@ section {
   background-color: #000;
   color: #fff;
   width: 100%;
-  padding: 70px 100px 50px;
+  padding: 50px 100px;
 }
 .my-skills .section-text {
   margin-bottom: 30px;
@@ -286,7 +288,7 @@ section {
 }
 
 .my-services {
-  padding: 70px 150px;
+  padding: 30px 150px;
 }
 .my-services .my-services__text .my-services__text-desc {
   font-size: 1.2em;
@@ -334,6 +336,7 @@ section {
 }
 
 .my-work {
+  padding: 30px 100px;
   background-color: #000000;
 }
 .my-work .my-work__images {
@@ -392,6 +395,9 @@ section {
   opacity: 1;
 }
 
+.contact {
+  padding: 30px 100px;
+}
 .contact .contact-me {
   display: flex;
   flex-wrap: wrap;
@@ -523,6 +529,7 @@ section {
     padding: 10px;
     display: inline-block;
     position: fixed;
+    z-index: 99;
   }
   .header .brand img {
     width: 150px;
@@ -532,13 +539,14 @@ section {
     position: absolute;
     top: 43px;
     right: 0;
-    z-index: -11111;
     height: 100vh;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.22);
-    transform: translateY(-120%);
+    transform: translateY(-200%);
+    z-index: 2;
   }
   .header .navigation .navigation-link {
-    font-size: 3em;
+    font-size: 2em;
   }
   .header .navigation.active {
     z-index: 2;
@@ -560,7 +568,7 @@ section {
   .header .navigation-list {
     display: inline-block;
     text-align: center;
-    width: 340px;
+    width: 100%;
   }
   .header .navigation-list .navigation-link {
     display: inline-block;
@@ -595,7 +603,7 @@ section {
   }
 
   .my-skills {
-    padding: 70px 10px 50px;
+    padding: 30px 10px;
   }
   .my-skills .section-text {
     margin-bottom: 30px;
@@ -613,7 +621,7 @@ section {
   }
 
   .my-services {
-    padding: 70px 30px;
+    padding: 30px;
   }
   .my-services .my-services__text .my-services__cards {
     display: flex;
@@ -626,65 +634,27 @@ section {
     margin: 25px auto;
   }
 
+  .my-work {
+    padding: 30px;
+  }
+
+  .contact {
+    padding: 30px;
+  }
   .contact .contact-me .contact-me__card {
     margin-bottom: 25px;
   }
   .contact .form {
-    background: #fff;
-    max-width: 600px;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-  }
-  .contact .form .form-title {
-    font-size: 2.5em;
-    margin: 20px 0;
-  }
-  .contact .form input, .contact .form textarea {
-    color: #111;
-    width: 100%;
-    padding: 10px;
-    font-size: 1.12em;
-    font-weight: 400;
-    outline: none;
-    border: 1px solid #111;
-    border-radius: 5px;
-    resize: none;
-    margin-bottom: 20px;
-    transition: all 0.2s linear;
-  }
-  .contact .form input:focus, .contact .form textarea:focus {
-    border-color: #1dd1a1;
-  }
-  .contact .form .send-button {
-    color: #fff;
-    background: crimson;
-    display: inline-block;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    width: 100%;
-    cursor: pointer;
-    transition: 0.5s ease;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid crimson;
-  }
-  .contact .form .send-button:hover {
-    background-color: transparent;
-    color: #000;
-    border-color: #000;
+    padding: 20px;
   }
 
   .sticky .navigation-link:hover {
     color: #000 !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .navigation {
+    width: 350px !important;
   }
 }
 @media (min-width: 460px) and (max-width: 550px) {
