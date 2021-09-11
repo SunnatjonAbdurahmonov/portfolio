@@ -441,8 +441,10 @@ section {
 
       img {
         width: 100%;
+        height: 100%;
         border-radius: 10px;
         transition: all 1s ease-in-out;
+        // object-fit: contain;
       }
 
       .work-links {
@@ -810,12 +812,6 @@ section {
         color: #000 !important;
       }
     }
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .navigation {
-    width: 350px !important;
   }
 }
 

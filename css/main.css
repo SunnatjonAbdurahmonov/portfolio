@@ -354,6 +354,7 @@ section {
 }
 .my-work .my-work__images .my-work__img-wrapper img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   transition: all 1s ease-in-out;
 }
@@ -650,11 +651,6 @@ section {
 
   .sticky .navigation-link:hover {
     color: #000 !important;
-  }
-}
-@media only screen and (min-width: 700px) {
-  .navigation {
-    width: 350px !important;
   }
 }
 @media (min-width: 460px) and (max-width: 550px) {
