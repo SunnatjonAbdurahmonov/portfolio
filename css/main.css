@@ -182,6 +182,9 @@ section {
   width: 85%;
   border-radius: 20px;
 }
+.about-me .about-me__col .about-me__col-description {
+  margin-top: 20px;
+}
 .about-me .about-me__col:nth-child(2) {
   align-items: flex-start;
   justify-content: flex-start;
@@ -452,7 +455,8 @@ section {
   font-size: 2.5em;
   margin: 20px 0;
 }
-.contact .form input, .contact .form textarea {
+.contact .form input,
+.contact .form textarea {
   color: #111;
   width: 100%;
   padding: 10px;
@@ -465,7 +469,8 @@ section {
   margin-bottom: 20px;
   transition: all 0.2s linear;
 }
-.contact .form input:focus, .contact .form textarea:focus {
+.contact .form input:focus,
+.contact .form textarea:focus {
   border-color: #1dd1a1;
 }
 .contact .form .send-button {
